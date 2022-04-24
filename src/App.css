@@ -1,0 +1,73 @@
+.App {
+  position: relative;
+  height: 50vh;
+  width: 27vw;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: var(--primary-bg-variant-color);
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input{
+  height: 1rem;
+  border-radius: 0.5rem;
+  background: var(--secondary-bg-variant-color);
+  color: var(--secondary-color);
+  outline: none;
+  padding: 0.5rem;
+  border: 0;
+  font-size: 1rem;
+}
+
+input:focus{
+  box-shadow: 0 0.01rem 0.3rem rgb(0 0 0 / 20%);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+button{
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.shorten__link{
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.loading{
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
