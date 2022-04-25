@@ -47,7 +47,7 @@ const LinkComponent = () => {
           <>
             <div className="shorten__link">{ link }</div>
             <CopyToClipboard text={link}>
-              <button>Copy</button>
+              <button className={copied? 'copied' : ''}>Copy</button>
             </CopyToClipboard>
           </>
         )
