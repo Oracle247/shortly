@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { addLink } from './features/linkSlice';
-// import { setLoading } from './features/loadingSlice';
+import { addLink } from '../features/linkSlice';
+
 
 const InputComponent = () => {
 
@@ -10,7 +10,7 @@ const InputComponent = () => {
   
 
   const dispatch = useDispatch();
-  const loading = useSelector((state) => state.loading.value);
+  // const loading = useSelector((state) => state.loading.value);
   
   const handleClick = (e) => {
     e.preventDefault();

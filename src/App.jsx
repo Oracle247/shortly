@@ -1,7 +1,7 @@
 import './App.css';
-import InputComponent from './InputComponent';
+import InputComponent from './component/InputComponent';
 import { useSelector } from 'react-redux';
-import LinkComponent from './LinkComponent';
+import LinkComponent from './component/LinkComponent';
 
 function App() {
 
