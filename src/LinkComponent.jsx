@@ -3,7 +3,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
-import { linkSlice } from './features/linkSlice';
+//import { linkSlice } from './features/linkSlice';
 
 const LinkComponent = () => {
 

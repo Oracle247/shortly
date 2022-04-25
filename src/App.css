@@ -64,10 +64,48 @@ button{
   font-size: 1rem;
   font-weight: bold;
   color: var(--secondary-color);
-  text-decoration: none;
+  text-decoratioheight: 40vh;n: none;
 }
-
+height: 50vh;
 .loading{
   font-size: 1.3rem;
   color: var(--secondary-color);
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px){
+  .App{
+    height: 40vh;
+    width: 55vw;
+  }
+  h2{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .shorten__link{
+    font-size: 1.3rem;
+  }
+  
+  .loading{
+    font-size: 1.2rem;
+  }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) =============*/
+@media screen and (max-width: 600px){
+  .App{
+    height: 40vh;
+    width: 70vw;
+  }
+  h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .shorten__link{
+    font-size: 1rem;
+  }
+  
+  .loading{
+    font-size: 1rem;
+  }
 }
