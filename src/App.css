@@ -56,10 +56,10 @@ form {
 button{
   border: none;
   border-radius: 0.5rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.45rem 0.6rem;
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
   transition: var(--transition);
