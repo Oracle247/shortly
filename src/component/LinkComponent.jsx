@@ -13,22 +13,20 @@ const LinkComponent = () => {
   const links = useSelector((state) => state.links.value);
   // const loading = useSelector((state) => state.loading.value);
 
-  const fetchData = async () => {
-    try {
-      setLoading(true);
-      console.log(loading);
-      const res = await axios(`https://api.shrtco.de/v2/shorten?url=${links}`);
-      setLink(res.data.result.full_short_link);  
-    } catch(err) {
-
-    } finally {
-      setLoading(false);
-      console.log(loading);
-    }
-  }
-
-  
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        console.log(loading);
+        const res = await axios(`https://api.shrtco.de/v2/shorten?url=${links}`);
+        setLink(res.data.result.full_short_link);  
+      } catch(err) {
+  
+      } finally {
+        setLoading(false);
+        console.log(loading);
+      }
+    }
     if(links) {
       fetchData();
     }
