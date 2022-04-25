@@ -9,6 +9,7 @@ const LinkComponent = () => {
 
   const [link, setLink] = useState('');
   const [loading, setLoading] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const links = useSelector((state) => state.links.value);
   // const loading = useSelector((state) => state.loading.value);
@@ -32,6 +33,14 @@ const LinkComponent = () => {
     }
   }, [links]);
 
+  useEffect(() => {
+    if(copied) {
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    }
+  }, [copied]);
+
   if(loading) {
     return (
       <div className="loading">
@@ -39,6 +48,7 @@ const LinkComponent = () => {
       </div>
     )
   }
+
   
   return (
     <>
@@ -46,7 +56,7 @@ const LinkComponent = () => {
         link && (
           <>
             <div className="shorten__link">{ link }</div>
-            <CopyToClipboard text={link}>
+            <CopyToClipboard text={link} onCopy={() => setCopied(true)}>
               <button className={copied? 'copied' : ''}>Copy</button>
             </CopyToClipboard>
           </>
