@@ -57,7 +57,7 @@ const LinkComponent = () => {
           <>
             <div className="shorten__link">{ link }</div>
             <CopyToClipboard text={link} onCopy={() => setCopied(true)}>
-              <button className={copied? 'copied' : ''}>Copy</button>
+              <button className={copied? 'copied' : ''}>{copied? 'copied...' : 'Copy'}</button>
             </CopyToClipboard>
           </>
         )

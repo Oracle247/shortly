@@ -11,6 +11,7 @@
   --secondary-color: #d9dde0;
   --secondary-bg-variant-color: #1f2630;
   --quaternary: #ffc600;
+  --transition: all 0.2s ease-in-out;
  }
 
 body {

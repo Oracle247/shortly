@@ -62,6 +62,7 @@ button{
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  transition: var(--transition);
 }
 
 button.copied {
